@@ -1,0 +1,143 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style-type: none;
+  text-decoration: none;
+  font-family: Montserrat;
+}
+
+a {
+  font-size: 25px;
+}
+
+header {
+  position: relative;
+  padding: 0 2rem;
+}
+
+.navbar {
+  width: 100%;
+  height: 60px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.navbar__logo {
+  color: rgb(37, 43, 66);
+  font-family: Montserrat;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 32px;
+  text-align: left;
+  user-select: none;
+}
+.navbar__links {
+  display: flex;
+  gap: 2rem;
+  font-weight: 700;
+}
+.navbar__links a {
+  font-size: 20px;
+  color: rgb(115, 115, 115);
+}
+.navbar__login {
+  display: flex;
+}
+.navbar__login-content {
+  display: flex;
+  gap: 4rem;
+}
+.navbar__login-content-text {
+  display: flex;
+  align-items: center;
+}
+.navbar__login-content-text a {
+  font-weight: 600;
+  color: rgb(35, 166, 240);
+}
+.navbar__login-content-member {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  background: rgb(35, 166, 240);
+  color: white;
+  padding: 0.5rem 1rem;
+  border: none;
+  outline: none;
+  border-radius: 1px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: scale 0.2 ease;
+}
+.navbar__login-content-member a {
+  font-size: 30px;
+  color: white;
+}
+.navbar__login-content-member a:hover {
+  scale: 1.05s;
+  color: white;
+}
+.navbar__login-content-member:active {
+  scale: 0.95;
+}
+.navbar__icons {
+  color: red;
+  cursor: pointer;
+  display: none;
+}
+
+.dropdown__main {
+  display: none;
+}
+
+@media all and (max-width: 1200px) {
+  .navbar__links,
+  .navbar__login,
+  .navbar__icons {
+    display: none;
+  }
+  .navbar {
+    background: rgb(246, 246, 246);
+  }
+  .navbar__icons {
+    display: block;
+  }
+  .dropdown__main {
+    display: block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: red;
+  }
+  .dropdown__main-menu a {
+    color: rgb(115, 115, 115);
+    line-height: 40px;
+    font-weight: 400;
+  }
+  .navbar__icons {
+    display: flex;
+  }
+  .navbar__icons ul {
+    display: flex;
+  }
+  .navbar__icons ul li {
+    padding-right: 30px;
+    font-size: 30px;
+    color: rgb(115, 115, 115);
+  }
+}
+.dropdown__main {
+  background: rgb(246, 246, 246);
+  backdrop-filter: blur(15px);
+  border-radius: 10px;
+  overflow: hidden;
+}
+.dropdown__main li {
+  padding: 0.7rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}/*# sourceMappingURL=style.css.map */
